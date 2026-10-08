@@ -1,28 +1,69 @@
-body {
-    background-color: #000000;
-    padding-top: 10px;
-    width:100%;
+/*Fonts*/
+@font-face {
+    font-family: 'Computer Regular';
+    src: url(/!g/!g/computer-regular-2_ufonts.com.ttf) format('truetype');
+}   
+@font-face {
+    font-family: 'TT Hoves';
+    src: url('/!g/!g/TT Hoves Pro Trial Condensed Regular.ttf') format('truetype');
+}  
+/*Formatting*/
+a {
+    color: Blue;
+    text-decoration: none;
+    user-select: all;
+    -webkit-user-select: auto;
+    font-size:20px;
 }
-.container {
-    max-width: 100%;
-    margin: 0 auto;
-    display:flex;
-    justify-content:center;
-
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+/*Normal Items*/
+body {
+    background-color: #FAF9F6;
+    width:100%;
+    font-family: 'TT Hoves';
 }
 main {
     flex:3;
-    color: #9564DD;    
+    color: black; 
+    font-family: 'TT Hoves'; 
+    font-size:20px;
 }
 aside {
     flex:1;
     color: #9564DD;
 }
-#upperlinks {
+/*Special Divs*/
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+
+}
+.header {
+    font-family: 'Computer Regular', monospace;
+    font-size:40px;
+    background-color: blue;
+    color:white;
+    padding-left:2%;
+    padding-top:1%;
+    padding-bottom:1%;
+}
+.body {
+    display:flex;
+    flex:1;
+}
+.bodyText {
+    padding:2%;
+}
+.links {
     text-align: right;
     padding-right: 5%;
-}
-a {
-    color: Blue;
-    text-decoration: none;
 }
